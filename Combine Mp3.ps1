@@ -10,6 +10,7 @@ Remove-Item .\mylist.txt -force
 
 foreach ($i in Get-ChildItem .\*.mp3) {echo "file '$i'" >> mylist.txt}
 #writes the "mylist.txt file"
+#Looks at the current directory, and looks for any .mp3 files that exist in that directory then writes the list of them out to file.
 #this is required by the ffmpeg application.
 #FFMPEG concatenate requires the list of files you wish to combine to be in a specific format
 #That format is literally - file 'FULL\FILE\PATH\TO\MEDIA\FILE.MP3'
