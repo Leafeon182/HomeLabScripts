@@ -4,7 +4,6 @@ $filename = Read-Host "Enter the Filename you'd wish to name your output file. T
 mkdir .\output -force
 #creates the output folder, this is needed to drop the end result file in.
 
-
 Remove-Item .\mylist.txt -force
 #removes the mylist.txt file if it already exists.
 #This is for cleanliness, otherwise an old file be written over, appended, etc, I think its best to just start fresh.
